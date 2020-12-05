@@ -1,24 +1,25 @@
-# hello-world
+# i-vue-cli
 
-## Project setup
-```
-npm install
-```
+## 背景
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+-  通过vue-cli脚手架可以快速初始化vue项目，通过`npm inatall`安装项目依赖，`npm run serve`启动本地编译服务，`npm run lint`整理和修复文件错误，`npm run build`打包项目文件，只要一个vue-cli脚手架，vue项目开发过程中的一条龙服务通通搞定，爽的不要不要的。
+-  但是，执行这些命令都干了些啥，是怎样实现的呢，为什么要这样实现，实现的原理又是什么，如果不用vue-cli，自己能否实现个cli脚手架去完成vue项目的开发？
+-  带着上面的疑问和好奇心，所以尝试着自己去实现个脚手架工具，即`i-vue-cli`。
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 目标
+
+  期望实现完成项目创建、开发、打包等功能。
+
+
+
+## 结果
+
+- [x] 开发模式的配置
+  - [x] 通过vue-cli创建一个base项目。
+  - [x] 自己配置webpack让项目跑起来先。
+
+
+- [x] 生产模式的配置
+  - [x] 生产模式下的简易打包配置

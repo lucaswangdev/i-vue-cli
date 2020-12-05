@@ -1,11 +1,17 @@
+## 准备
+
+### 依赖库：
+
+```json
+// 初始package.json配置文件：
 {
   "name": "hello-world",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "lint": "eslint src/*.js"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -16,22 +22,9 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.1",
-    "eslint": "^6.8.0",
+    "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^4.5.0",
-    "less": "^3.12.2",
-    "less-loader": "^7.1.0",
-    "style-loader": "^2.0.0",
-    "vue-loader": "^15.9.5",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.10.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-middleware": "^4.0.2",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.4.0"
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
@@ -53,3 +46,35 @@
     "not dead"
   ]
 }
+
+```
+
+
+
+### vue-cli命令：
+
+```
+## Project setup
+
+​```
+npm install
+​```
+
+### Compiles and hot-reloads for development
+​```
+npm run serve
+​```
+
+### Compiles and minifies for production
+​```
+npm run build
+​```
+
+### Lints and fixes files
+​```
+npm run lint
+​```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+```
